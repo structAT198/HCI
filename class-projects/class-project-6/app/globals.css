@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  overflow-y: hidden;
+  background-image: linear-gradient(#FFFFFF, #EEEEEE);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  padding-top: 74px;
+  padding-left: 570px;
+}
+
+.navigation_item {
+  background-color: transparent;
+  width: auto;
+  height: 36px;
+  margin: 10px;
+  display: inline-block;
+  padding-top: 6px;
+  color: black;
+  font-weight: 600;
+  transition: .2s ease-in-out 0s;
+  border-bottom: 6px;
+  border-style: solid;
+  border-color: transparent;
+  font-family: 'Inter';
+  font-size: 22px;
+  font-weight: 400;
+  margin-left: 58px;
+  line-height: 18px;
+}
+
+.navigation_item_clicked {
+    font-weight: 600;
+    border-color: #929BF4;
+    padding-bottom: 4px;
+}
+
+li:hover{
+    border-color: #a7aee9;
+}
+
+.main_title {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 40px;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(80, 128, 155);
+  color: white;
+}
+
+.blog_articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.big_section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    top: 56px;
+    height: calc(100vh - 56px);
+}
+
+.left_side {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_side {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_side_image {
+    width: 884px;
+    height: 600px;
+    padding-right: 120px;
+}
+
+.left_side_title {
+    font-size: 64px;
+    font-family: 'Inter';
+    font-weight: 600;
+}
+
+.left_side_slogan {
+    font-size: 24px;
+    color: #535353;
+    font-family: 'Inter';
+    margin-top: -14px;
+}
+
+.left_side_input {
+    width: 456px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: #FCFCFC;
+    border-color: #CECECE;
+    border-width: 1px;
+    border-style: solid;
+    padding-left: 48px;
+    margin-top: 30px;
+    background-image: url("../public/search_bar_magnifier.png");
+    background-repeat: no-repeat;
+    background-position-x: 14px;
+    background-position-y: center;
+    background-size: 20px 20px;
+}
+
+.mobile_top_holder {
+    display: none;
+}
+
+.mobile_navigation_menu {
+    display: none;
+}
+
+@media screen and (max-width: 1080px) {
+    .big_section {
+        flex-direction: column-reverse;
+    }
+    .left_side {
+        width: 100%;
+        align-items: start;
+    }
+    .right_side {
+        width: 100%;
+    }
+    nav {
+        display: none;
+    }
+
+    .navigation_item {
+        visibility: hidden;
+    }
+    .left_side_title {
+        display: none;
+    }
+    .left_side_slogan {
+        display: none;
+    }
+    .mobile_top_holder {
+        margin-left: 56px;
+        margin-top: 56px;
+        display: flex;
+        flex-direction: row;
+        height: 106px;
+    }
+    .mobile_title {
+        font-size: 64px;
+        font-family: 'Inter';
+        font-weight: 600;
+        margin-top: -10px;
+        z-index: 9;
+    }
+    .mobile_slogan {
+        font-size: 24px;
+        color: #535353;
+        font-family: 'Inter';
+        margin-top: -14px;
+        z-index: 9;
+    }
+    .mobile_menu_icon {
+        margin-right: 40px;
+        size: 106px 106px;
+    }
+    .right_side_image {
+        margin-top: 40%;
+    }
+    .left_side_input {
+        margin-top: 100px;
+    }
+    .mobile_navigation_menu {
+        display: flex;
+        border-radius: 26px;
+        width: 74vw;
+        background-color: #B7B6FF;
+        height: 80vh;
+        z-index: 10;
+    }
+
+    .mobile_navigation_menu_hidden {
+        display: none;
+    }
+
+    .mobile_text_holder {
+        display: block;
+    }
+
+    .mobile_text_holder_hidden {
+        display: none;
+    }
+}
