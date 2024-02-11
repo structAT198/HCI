@@ -1,0 +1,736 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(#FFFFFF, #EEEEEE);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: var(--font-inter);
+    white-space: pre-line;
+}
+
+.navigation_bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row-reverse;
+    padding-top: 60px;
+    padding-right: 60px;
+    background-color: transparent;
+}
+
+.navigation_item {
+    background-color: transparent;
+    width: auto;
+    height: 36px;
+    margin: 10px;
+    display: inline-block;
+    padding-top: 6px;
+    color: black;
+    font-weight: 600;
+    transition: .2s ease-in-out 0s;
+    border-bottom: 6px;
+    border-style: solid;
+    border-color: transparent;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 58px;
+    line-height: 18px;
+}
+
+.navigation_item_clicked {
+    font-weight: 600;
+    border-color: #929BF4;
+    padding-bottom: 4px;
+}
+
+li:hover{
+    border-color: #a7aee9;
+}
+
+.main_title {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 40px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(80, 128, 155);
+    color: white;
+}
+
+.blog_articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.big_section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+}
+
+.left_side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25vh;
+}
+
+.right_side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+.right_side_image {
+    width: 100%;
+    height: auto;
+    padding-right: 120px;
+    background-size: contain;
+}
+
+.left_side_title {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.left_side_slogan {
+    font-size: 24px;
+    color: #535353;
+    margin-top: -14px;
+}
+
+.left_side_input {
+    width: 456px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: #FCFCFC;
+    border-color: #CECECE;
+    border-width: 1px;
+    border-style: solid;
+    padding-left: 48px;
+    margin-top: 30px;
+    background-image: url("../public/search_bar_magnifier.png");
+    background-repeat: no-repeat;
+    background-position-x: 14px;
+    background-position-y: center;
+    background-size: 20px 20px;
+}
+
+.mobile_top_holder {
+    display: none;
+}
+
+.mobile_navigation_menu {
+    display: none;
+}
+
+a {
+    height: 36px;
+    display: inline-block;
+}
+
+.laptops_card_holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding-top: 60px;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.laptop_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 26%;
+    height: auto;
+    background-color: rgb(234, 234, 234);
+    border-color: #D2D2D2;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: 0px 6px 25px -25px rgba(0, 0, 0, 0.75);
+}
+
+.laptop_card_name {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.laptop_card_divison_line {
+    width: 90%;
+    height: 1px;
+    background-color: #D2D2D2;
+}
+
+.laptop_card_image {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-color: transparent;
+}
+
+.laptop_card_description {
+    width: 100%;
+    padding-left: 30px;
+}
+
+.laptop_card_buy_button {
+    width: 80%;
+    height: 38px;
+    background-color: rgb(52, 165, 116);
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.laptop_card_buy_button_out {
+    width: 80%;
+    height: 38px;
+    background-color: rgb(213, 38, 38);
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.izrada {
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(152, 152, 152);
+    text-align: center;
+    display: block;
+}
+
+.support_holder {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+    gap: 20px;
+}
+
+.support_box {
+    width: 80vw;
+    background-color: white;
+    border-color: #D2D2D2;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 25px -25px rgba(0, 0, 0, 0.75);
+    height: fit-content;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.support_box_title {
+    font-weight: 600;
+    color: black;
+}
+
+.support_box_content {
+    font-weight: 400;
+    color: black;
+}
+
+.support_box_content:last-child {
+    margin-bottom: 20px;
+}
+
+.support_text_holder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.credit_card_holder {
+    margin-right: 20px;
+    margin-top: 3px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+table {
+    align-self: center;
+    min-width: 600px;
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+
+table th {
+    height: 30px;
+    border-width: 1px;
+    border-color: #D2D2D2;
+    border-style: solid;
+    color: black;
+    background-color: white;
+}
+
+table tr {
+    border-width: 1px;
+    border-color: #D2D2D2;
+    border-style: solid;
+}
+
+table td {
+    height: 30px;
+    border-width: 1px;
+    border-color: #D2D2D2;
+    border-style: solid;
+    padding-left: 10px;
+}
+
+table tr:nth-child(odd) {
+    background-color: rgb(246, 246, 246);
+}
+
+table tr:nth-child(even) {
+    background-color: white;
+}
+
+.credit_card_logo {
+    width: 84px;
+    height: 42px;
+    border-color: #e5e5e5;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 6px 25px -25px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#visa {
+    background-image: url("../public/Visa.png");
+}
+
+#mastercard {
+    background-image: url("../public/Mastercard.png");
+}
+
+#american_express {
+    background-image: url("../public/American\ Express.png");
+    border: none;
+}
+
+#discover {
+    background-image: url("../public/Discover.png");
+}
+
+.error_holder {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error_banner {
+    font-weight: 600;
+    font-size: 40px;
+    color: black;
+}
+
+.error_description {
+    font-weight: 400;
+    font-size: 20px;
+    color: #535353;
+}
+
+.error_button {
+    width: 200px;
+    height: 38px;
+    background-color: #929BF4;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.error_image {
+    width: 300px;
+    height: 300px;
+    background-image: url("../public/error_image.png");
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.trade_in_holder {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.trade_in_upper_holder {
+    display: flex;
+    flex-direction: column;
+}
+
+.trade_in_title {
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+}
+
+.trade_in_description {
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+}
+
+.trade_in_dropdown {
+    width: 100%;
+    border-radius: 4px;
+    appearance: none;
+    height: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #D2D2D2;
+    color: rgb(63, 63, 63);
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.trade_in_separator {
+    width: 100%;
+    height: 1px;
+    background-color: #D2D2D2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.trade_in_option_holder {
+    display: flex;
+    flex-direction: column;
+}
+
+.trade_in_option_name {
+    margin-bottom: 10px;
+}
+
+.trade_in_option_button_holder {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.trade_in_option_button {
+    width: 234px;
+    height: 42px;
+    border-color: rgb(223, 223, 223);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+    padding-top: 8px;
+    padding-left: 8px;
+    margin-bottom: 20px;
+}
+
+.trade_in_option_button_selected {
+    color: #929BF4;
+    border-color: #929BF4;
+}
+
+.trade_in_worth_holder {
+    display: flex;
+    flex-direction: row;
+}
+
+.trade_in_worth {
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+}
+
+.trade_in_worth_value {
+    font-weight: 600;
+}
+
+.search_title {
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+    padding-top: 60px;
+    padding-left: 120px;
+}
+
+.search_empty {
+    font-size: 18px;
+    padding-left: 120px;
+}
+
+.search_empty_hidden {
+    display: none;
+}
+
+@media screen and (orientation: portrait) {
+    .navigation_bar {
+        display: none;
+    }
+
+    .big_section {
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    .left_side {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .right_side {
+        width: 100%;
+        margin-top: 20vh;
+    }
+
+    .left_side_title {
+        display: none;
+    }
+
+    .left_side_slogan {
+        display: none;
+    }
+
+    .mobile_top_holder {
+        padding-left: 20px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        height: 62px;
+    }
+
+    .mobile_title {
+        font-size: 24px;
+        font-weight: 600;
+        z-index: 9;
+    }
+
+    .mobile_slogan {
+        font-size: 12px;
+        color: #535353;
+        z-index: 9;
+        line-height: 2px;
+    }
+
+    .mobile_menu_icon_wrapper {
+        min-width: 42px;
+        min-height: 42px;
+        max-width: 42px;
+        max-height: 42px;
+        margin-right: 20px;
+    }
+
+    .mobile_menu_icon {
+        background-size: 64px;
+    }
+
+    .right_side_image {
+        padding-right: 0px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 80%;
+        height: auto;
+    }
+
+    .left_side_input {
+        width: 70vw;
+        height: 40px;
+    }
+
+    .mobile_navigation_menu {
+        display: flex;
+        flex-direction: column;
+        border-radius: 26px;
+        width: 74vw;
+        background-color: rgb(233,233,253);
+        height: 70vh;
+        z-index: 10;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile_navigation_menu_hidden {
+        display: none;
+    }
+
+    .mobile_text_holder {
+        display: block;
+        margin-top: -4px;
+        height: 42px;
+    }
+
+    .mobile_text_holder_hidden {
+        display: none;
+    }
+
+    .navigation_item {
+        width: fit-content;
+        background-color: transparent;
+        height: 36px;
+        color: black;
+        font-weight: 600;
+        transition: .2s ease-in-out 0s;
+        border-bottom: 6px;
+        border-style: solid;
+        border-color: transparent;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 18px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 14px;
+        margin-bottom: 28px;
+        padding: 0px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navigation_item_clicked {
+        font-weight: 600;
+        border-color: #929BF4;
+    }
+
+    .laptops_card_holder {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        gap: 0px;
+    }
+
+    .laptop_card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .error_image {
+        width: 150px;
+        height: 150px;
+        background-size: 150px 150px;
+    }
+
+    .error_banner {
+        font-size: 20px;
+    }
+
+    .error_description {
+        font-size: 15px;
+    }
+
+    .support_holder {
+        padding-top: 20px;
+    }
+
+    .support_box {
+        flex-wrap: wrap;
+        padding-left: 0px;
+    }
+
+    .support_box_title {
+        margin-left: 20px;
+    }
+
+    .support_box_content {
+        margin-left: 20px;
+        margin-right: 16px;
+    }
+
+    .credit_card_holder {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: -8px;
+        min-width: 100%;
+        justify-content: center;
+    }
+
+    .support_box:last-child {
+        margin-bottom: 20px;
+    }
+
+    table {
+        min-width: 280px;
+    }
+
+    .trade_in_holder {
+        padding-top: 20px;
+    }
+
+    .trade_in_title {
+        padding-left: 30px;
+    }
+
+    .trade_in_description {
+        padding-left: 30px;
+    }
+    
+    .trade_in_dropdown {
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .trade_in_separator {
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .trade_in_option_name {
+        padding-left: 30px;
+    }
+
+    .trade_in_option_button_holder {
+        display: flex;
+        justify-content: center;
+    }
+
+    .trade_in_option_button {
+        width: 180px;
+    }
+
+    .trade_in_worth {
+        margin-bottom: 20px;
+    }
+}
