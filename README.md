@@ -11,6 +11,6 @@ Dodana peta vjezba + paginacija  >>>  https://hci-l5.vercel.app/
 Dodana sesta vjezna  >>>  https://hci-l6.vercel.app
 
 
-Dodan semester project  >>>>>> https://laptop-marketplace.vercel.app
+Dodan semester project  >>>>>> https://laptop-market.vercel.app
 
 CHANGELOG REPORT se nalazi u project folderu!
