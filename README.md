@@ -14,3 +14,5 @@ Dodana sesta vjezna  >>>  https://hci-l6.vercel.app
 Dodan semester project  >>>>>> https://laptop-market.vercel.app
 
 CHANGELOG REPORT se nalazi u project folderu!
+
+IZVJESCE JE JOS U IZRADI.
