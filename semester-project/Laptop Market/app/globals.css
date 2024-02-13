@@ -194,8 +194,13 @@ a {
 }
 
 .laptop_card_description {
-    width: 100%;
-    padding-left: 30px;
+    width: 82%;
+    padding-top: 2px;
+    padding-left: 6px;
+    background-color: rgb(208, 208, 243);
+    border-radius: 4px;
+    height: auto;
+    color: black;
 }
 
 .laptop_card_buy_button {
@@ -501,6 +506,101 @@ table tr:nth-child(even) {
     display: none;
 }
 
+.accessories_card_holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding-top: 60px;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.accessory_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 26%;
+    height: auto;
+    background-color: rgb(239, 239, 239);
+    border-color: #D2D2D2;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: 0px 6px 25px -25px rgba(0, 0, 0, 0.75);
+}
+
+.accessory_card_name {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.accessory_card_divison_line {
+    width: 90%;
+    height: 1px;
+    background-color: #D2D2D2;
+}
+
+.accessory_card_image {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-color: transparent;
+}
+
+.accessory_card_description {
+    width: 84%;
+    padding-top: 2px;
+    padding-left: 6px;
+    background-color: rgb(208, 208, 243);
+    border-radius: 4px;
+    height: 30px;
+    color: black;
+}
+
+.accessory_button_container {
+    width: 84%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.accessory_card_buy_button {
+    width: 80%;
+    height: 38px;
+    background-color: rgb(52, 165, 116);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.accessory_card_buy_button_out {
+    width: 80%;
+    height: 38px;
+    background-color: rgb(213, 38, 38);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.accessory_count {
+    width: 38px;
+    height: 38px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: rgb(44, 44, 44);
+    text-align: center;
+    padding-top: 6px;
+}
+
 @media screen and (orientation: portrait) {
     .navigation_bar {
         display: none;
@@ -641,6 +741,18 @@ table tr:nth-child(even) {
         margin-bottom: 20px;
     }
 
+    .accessories_card_holder {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        gap: 0px;
+    }
+
+    .accessory_card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
     .error_image {
         width: 150px;
         height: 150px;
@@ -732,5 +844,14 @@ table tr:nth-child(even) {
 
     .trade_in_worth {
         margin-bottom: 20px;
+    }
+
+    .search_title {
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+    
+    .search_empty {
+        padding-left: 30px;
     }
 }

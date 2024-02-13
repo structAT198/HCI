@@ -35,7 +35,7 @@ async function Search_Page()
             <Navigation_Bar page_name="Home"></Navigation_Bar>
             <Mobile_Navigation_Bar page_name="Home"></Mobile_Navigation_Bar>
             <div className="search_title">Search Results:</div>
-            <div className={ search_data_filtered === "empty" ? "search_empty" : "search_empty_hidden" }>Not results founds.</div>
+            <div className={ search_data_filtered === "empty" ? "search_empty" : "search_empty_hidden" }>No results found.</div>
             <div className="laptops_card_holder">
                 {wanted_laptops.map((laptop) => {
                     return(
